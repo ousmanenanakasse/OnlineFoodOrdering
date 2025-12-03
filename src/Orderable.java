@@ -1,5 +1,5 @@
 public interface Orderable {
-    void addToCard(MenuItem Item);
+    void addToCart(MenuItem item);
     void checkout();
 }
 
