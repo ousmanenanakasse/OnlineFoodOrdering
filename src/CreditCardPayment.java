@@ -1,4 +1,6 @@
 public class CreditCardPayment implements PaymentMethod {
     @Override
-    public void pay(double amount)
+    public void pay(double amount){
+        System.out.println("Paid "+ amount + "TL using credit card.");
+    }
 }
