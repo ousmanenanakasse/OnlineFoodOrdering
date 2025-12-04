@@ -1,2 +1,5 @@
-public class CashPayment {
+public class CashPayment implements PaymentMethod{
+    public void pay(double amount){
+
+    }
 }
