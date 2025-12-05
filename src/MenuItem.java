@@ -15,7 +15,7 @@ public class MenuItem {
         return price;
     }
     @Override
-    public String ToString(){
-        return name + " " + price + "TL";
+    public String toString(){
+        return name + " -" + price + "TL";
     }
 }
