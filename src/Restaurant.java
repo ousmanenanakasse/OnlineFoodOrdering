@@ -19,6 +19,6 @@ public class Restaurant {
         if (index >= 0 && index < menu.size()){
             return menu.get(index);
         }
-        return
+        return null;
     }
 }
