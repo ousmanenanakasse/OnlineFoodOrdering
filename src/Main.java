@@ -4,8 +4,8 @@ public class Main {
     public static void main(String[] args){
         Restaurant restaurant = new Restaurant();
         restaurant.addMenuItem(new MenuItem("Döner", 250));
-        restaurant.addMenuItem(new MenuItem("Pilav", 150));
-        restaurant.addMenuItem(new MenuItem("Ayran", 50));
+        restaurant.addMenuItem(new MenuItem("Tavuk", 250));
+        restaurant.addMenuItem(new MenuItem("Pasta", 200));
 
         Customer customer = new Customer("Salim Watt", "Zafer Mah. 34523", "9476-8161");
         System.out.println("WELCOME " + customer.getName());
@@ -25,11 +25,15 @@ public class Main {
 
             }else if (choice==4){
                 customer.checkout();
-            }
+
+                System.out.println("Choose payment: 1. Credit Card  2. Cash");
+                int payChoice = scanner.nextInt();
+                PaymentMethod payment;
+
+                if (payChoice == 1) payment = new CreditCardPayment();
+                else payment = new CashPayment();
 
 
         }
-
     }
-
 }
