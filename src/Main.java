@@ -7,5 +7,15 @@ public class Main {
         restaurant.addMenuItem(new MenuItem("Pilav", 150));
         restaurant.addMenuItem(new MenuItem("Ayran", 50));
 
+        Customer customer = new Customer("Salim Watt", "Zafer Mah. 34523", "9476-8161");
+        System.out.println("WELCOME " + customer.getName());
+
+        Scanner scanner = new Scanner(System.in);
+        boolean running = true;
+        while (running){
+
+        }
+
     }
+
 }
