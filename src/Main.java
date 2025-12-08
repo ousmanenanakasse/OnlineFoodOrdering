@@ -13,6 +13,20 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         boolean running = true;
         while (running){
+            restaurant.displayMenu();
+            System.out.println("4. Checkout");
+            System.out.println("5. Exit");
+            System.out.println("Select an option: ");
+
+            int choice = scanner.nextInt();
+            if (choice>=1 && choice<=3){
+                MenuItem item = restaurant.getItem(choice-1);
+                customer.addToCart(item);
+
+            }else if (choice==4){
+                customer.checkout();
+            }
+
 
         }
 
