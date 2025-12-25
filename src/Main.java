@@ -33,6 +33,9 @@ public class Main {
                 if (payChoice == 1) payment = new CreditCardPayment();
                 else payment = new CashPayment();
 
+                payment.pay(250);
+
+
 
         }
     }
