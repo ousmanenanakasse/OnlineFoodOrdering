@@ -35,7 +35,9 @@ public class Main {
 
                 payment.pay(250);
 
-
+            } else {
+                running = false;
+            }
 
         }
     }
