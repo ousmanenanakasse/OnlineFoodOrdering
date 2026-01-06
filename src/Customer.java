@@ -28,7 +28,7 @@ public class Customer extends User implements Orderable{
             System.out.println(item);
             total+= item.getPrice();
         }
-        System.out.println("Total Amount: " + total +"TL");
+        System.out.println("Total Amount: $" + total);
         cart.clear();
     }
 }

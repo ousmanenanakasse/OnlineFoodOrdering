@@ -40,7 +40,7 @@ public class Main {
                 else payment = new CashPayment();
 
 
-                payment.pay(25.00);
+                payment.pay(12.5);
 
             } else {
                 running = false;
